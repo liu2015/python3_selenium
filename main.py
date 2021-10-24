@@ -1,6 +1,5 @@
 import random
 import time
-
 from selenium import webdriver
 
 with webdriver.Chrome() as driver:
@@ -17,7 +16,6 @@ with webdriver.Chrome() as driver:
     driver.find_element_by_xpath(
         '/html/body/div[1]/div[1]/div[5]/div[2]/div/form/span[2]/input').click(
         )
-
     print(driver.title)
     time.sleep(5)
     print("递交分支到main1tef")
